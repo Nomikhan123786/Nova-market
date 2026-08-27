@@ -1,9 +1,12 @@
 import Navbar from "./components/Navbar";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <CartProvider>
+        <Navbar />
+      </CartProvider>
     </>
   );
 }
